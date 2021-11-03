@@ -1,12 +1,10 @@
 '''
 File: ML_funcs.py
-File Created: 2020-07-22
-Author: Adrian Gabriel Zucco (adrian.gabriel.zucco@regionh.dk)
-
-Functions adapted from Rudi
+File Created: 2021-11-03
+Author: Adrian G. Zucco (adrian.gabriel.zucco@regionh.dk)
 -----
-Last Modified: 2020-08-25 10:25:05 am
-Modified By: Adrian Gabriel Zucco (adrian.gabriel.zucco@regionh.dk>)
+Last Modified: 2021-11-03 10:57:04 pm
+Modified By: Adrian G. Zucco (adrian.gabriel.zucco@regionh.dk>)
 '''
 
 
