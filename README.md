@@ -1,9 +1,9 @@
 # Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning
 
-Official code repository for the paper "Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning" by Zucco et al.
+Official code repository for the paper "[Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning](https://www.medrxiv.org/content/10.1101/2021.10.28.21265598v1)" by Zucco et al.
 
 ## Software requirements
-Tested on Ubuntu 20.04, run the following commands.
+Tested on Ubuntu 20.04 (WSL) with Anaconda installed. To set a python environment with the required dependencies run the following commands:
 
 ```
   conda env create -f covimun_ml_env.yml
