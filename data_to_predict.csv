@@ -1,0 +1,6 @@
+﻿index,age,num_ordmeds,in_hosp,BMI,diagnoses_count_DZ01,pandemic_weeks,sex_at_birth,ordmed_count_A06AD,num_diagnoses,ordmed_count_N02BE,laboratory_lastvalue_LYM,ordmed_count_C03CA,days_in_hospital,ordmed_count_N01AH,HOSP_BEFORE,diagnoses_count_DG30,diagnoses_count_DZ03,diagnoses_count_DI10,adminmed_count_C03CA,ordmed_count_A11EA,adminmed_count_A12AX
+1,30,6,1,28,0,3,1,0,5,0,0.5,0,0,0,0,0,2,0,0,0,0
+2,46,7,0,30,0,30,0,0,4,0,,0,5,0,1,0,0,0,0,0,0
+3,83,0,0,,7,42,0,0,6,0,,0,0,0,0,0,0,0,0,0,0
+4,74,16,1,27,1,32,1,0,15,1,,0,12,0,2,0,5,6,0,0,9
+5,55,0,0,,0,43,1,0,0,0,,0,23,0,0,0,0,0,0,0,0

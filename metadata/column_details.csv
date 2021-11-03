@@ -1,0 +1,23 @@
+col_names,source,value,Code_shorter,short_code,short_name,type
+age,,,,,Age,basic
+num_ordmeds,,,,,Number of ordered medicines,basic
+in_hosp,,,,,Admitted at the time of first positive test,basic
+BMI,,,,,Body Mass Index,basic
+diagnoses_count_DZ01,Diagnose,count,Z01,Z01,Encounter for other special examination,ICD-10
+pandemic_weeks,,,,,Pandemic week,basic
+sex_at_birth,,,,,Sex,basic
+ordmed_count_A06AD,Ordered Medicine,count,A06AD,A06AD,Laxatives,ATC
+num_diagnoses,,,,,Number of diagnoses,basic
+ordmed_count_N02BE,Ordered Medicine,count,N02BE,N02BE,Paracetamol,ATC
+laboratory_lastvalue_LYM,laboratory,last value,LYM,LYM,Absolute Lymphocyte count,biochemistry
+ordmed_count_C03CA,Ordered Medicine,count,C03CA,C03CA,Loop diuretics,ATC
+days_in_hospital,,,,,Cumulative days in hospital within the last 3 years,basic
+ordmed_count_N01AH,Ordered Medicine,count,N01AH,N01AH,Opioid anesthetics,ATC
+HOSP_BEFORE,,,,,Previous admissions in the last 3 years,basic
+diagnoses_count_DG30,Diagnose,count,G30,G30,Alzheimer's disease,ICD-10
+diagnoses_count_DZ03,Diagnose,count,Z03,Z03,Encounter for medical observation,ICD-10
+diagnoses_count_DI10,Diagnose,count,I10,I10,Essential hypertension,ICD-10
+adminmed_count_C03CA,Administered medicine,count,C03CA,C03CA,Loop diuretics,ATC
+ordmed_count_A11EA,Ordered Medicine,count,A11EA,A11EA,Vitamin B-complex,ATC
+adminmed_count_A12AX,Administered medicine,count,A12AX,A12AX,Calcium + vitamin D ,ATC
+range_time,,,,,Week after the first positive test,time
