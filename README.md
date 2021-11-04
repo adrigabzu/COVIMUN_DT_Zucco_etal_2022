@@ -3,7 +3,16 @@
 Official code repository for the paper "[Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning](https://www.medrxiv.org/content/10.1101/2021.10.28.21265598v1)" by Zucco et al.
 
 ## Software requirements
-Tested on Ubuntu 20.04 (WSL) with Anaconda installed. To set a python environment with the required dependencies run the following commands:
+Tested on Ubuntu 20.04 (Windows Subsystem for Linux 2)
+
+### 1. Clone this repository
+Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to run:
+```bash
+git clone https://github.com/PERSIMUNE/COVIMUN_DT.git
+```
+
+### 2. Create an environment
+Install [conda](https://github.com/PERSIMUNE/COVIMUN_DT.git) to create a new python environment.
 
 ```
   conda env create -f covimun_ml_env.yml
@@ -11,16 +20,51 @@ Tested on Ubuntu 20.04 (WSL) with Anaconda installed. To set a python environmen
   pip install -r requirements.txt
 ```
 
+Alternatively:
+- A virtual environment can be created using `virtualenv` 
+- The `pip install -r requirements.txt` can be executed in your base environment given that python 3.9 is already installed in your system.
+
 ## Run predictions
+
+Data in `.csv`/`.xlsx` format needs to be provided with values for one patient in each row. The columns and values are described below:
+
+
+| Column name              | Description                                                    | Value                                       |
+|--------------------------|----------------------------------------------------------------|---------------------------------------------|
+| index                    | Index given by the user                                        | String or numerical                         |
+| age                      | Age                                                            | Last value observed                         |
+| num_ordmeds              | Number of ordered medicines                                    | Count in the last year                      |
+| in_hosp                  | Admitted at the time of first positive test                    | 1 (yes) / 0 (no)                            |
+| BMI                      | Body Mass Index                                                | Last value in the last month                |
+| diagnoses_count_DZ01     | Encounter for other special examination (Z01), Diagnose, count | Count in the last 3 years                   |
+| pandemic_weeks           | Pandemic week                                                  | Weeks since 1st or March 2020               |
+| sex_at_birth             | Sex                                                            | 0 (female) / 1 (male)                       |
+| ordmed_count_A06AD       | Laxatives (A06AD), Ordered Medicine, count                     | Count in the last year                      |
+| num_diagnoses            | Number of diagnoses                                            | Count in the last 3 years                   |
+| ordmed_count_N02BE       | Paracetamol (N02BE), Ordered Medicine, count                   | Count in the last year                      |
+| laboratory_lastvalue_LYM | Absolute Lymphocyte count (LYM), laboratory, last value        | Latest value in the last month (G/L)        |
+| ordmed_count_C03CA       | Loop diuretics (C03CA), Ordered Medicine, count                | Count in the last year                      |
+| days_in_hospital         | Cumulative days in hospital within the last 3 years            | Sum of days in hospital in the last 3 years |
+| ordmed_count_N01AH       | Opioid anesthetics (N01AH), Ordered Medicine, count            | Count in the last year                      |
+| HOSP_BEFORE              | Previous admissions in the last 3 years                        | Count in the last 3 years                   |
+| diagnoses_count_DG30     | Alzheimer's disease (G30), Diagnose, count                     | Count in the last 3 years                   |
+| diagnoses_count_DZ03     | Encounter for medical observation (Z03), Diagnose, count       | Count in the last 3 years                   |
+| diagnoses_count_DI10     | Essential hypertension (I10), Diagnose, count                  | Count in the last 3 years                   |
+| adminmed_count_C03CA     | Loop diuretics (C03CA), Administered medicine, count           | Count in the last year                      |
+| ordmed_count_A11EA       | Vitamin B-complex (A11EA), Ordered Medicine, count             | Count in the last year                      |
+| adminmed_count_A12AX     | Calcium + vitamin D  (A12AX),   Administered medicine, count   | Count in the last year                      |
+
+An example can be seen at `data_to_predict.csv`, this file can be edited or a different file can be provided with the flag `--input_data`. To run predictions using the default examples use:
 
 ```
 python ./run_predictions.py
 ```
+For custom files an options please follow the help which can be accessed by `python ./run_predictions.py -h`
 
 ```
 usage: run_predictions.py [-h] [--input_data INPUT_DATA] [--models_folder MODELS_FOLDER] [--output_folder OUTPUT_FOLDER] [--col_info COL_INFO] [--plot_curves {True,False}] [--explain {True,False}]
 
-Predict survival probabilites withing 12 weeks from a first SARS-CoV-2 positive test
+Predict survival probabilities withing 12 weeks from a first SARS-CoV-2 positive test
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -40,12 +84,12 @@ optional arguments:
 ## How to cite
 
 ```
-Zucco, A. G., Agius, R., Svanberg, R., Moestrup, K. S., Marandi, R. Z., MacPherson, C. R., Lundgren, J., Ostrowski, S. R., & Niemann, C. U. (2021). 
 Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning (p. 2021.10.28.21265598). 
+Zucco, A. G., Agius, R., Svanberg, R., Moestrup, K. S., Marandi, R. Z., MacPherson, C. R., Lundgren, J., Ostrowski, S. R., & Niemann, C. U. (2021). 
 https://doi.org/10.1101/2021.10.28.21265598
 ```
 
-BibTex format
+BibTex format:
 
 ```
 @techreport{zuccoPersonalizedSurvivalProbabilities2021,
