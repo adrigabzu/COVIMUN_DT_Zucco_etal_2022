@@ -1,6 +1,6 @@
 # Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning
 
-Official code repository for the paper "[Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning](https://www.medrxiv.org/content/10.1101/2021.10.28.21265598v1)" by Zucco et al.
+Official code repository for the paper "[Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning](https://doi.org/10.1038/s41598-022-17953-y)" by Zucco et al., 2022.
 
 ## Software requirements
 Tested on Ubuntu 20.04 (Windows Subsystem for Linux 2)
@@ -84,22 +84,32 @@ optional arguments:
 ## How to cite
 
 ```
-Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning (p. 2021.10.28.21265598). 
-Zucco, A. G., Agius, R., Svanberg, R., Moestrup, K. S., Marandi, R. Z., MacPherson, C. R., Lundgren, J., Ostrowski, S. R., & Niemann, C. U. (2021). 
-https://doi.org/10.1101/2021.10.28.21265598
+Zucco, A. G., Agius, R., Svanberg, R., Moestrup, K. S., Marandi, R. Z., MacPherson, C. R., Lundgren, J., Ostrowski, S. R., & Niemann, C. U. (2022). 
+Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning. 
+Scientific Reports, 12(1), 13879. https://doi.org/10.1038/s41598-022-17953-y
 ```
 
 BibTex format:
 
 ```
-@techreport{zuccoPersonalizedSurvivalProbabilities2021,
-  title = {Personalized Survival Probabilities for {{SARS}}-{{CoV}}-2 Positive Patients by Explainable Machine Learning},
-  author = {Zucco, Adrian G. and Agius, Rudi and Svanberg, Rebecka and Moestrup, Kasper S. and Marandi, Ramtin Z. and MacPherson, Cameron Ross and Lundgren, Jens and Ostrowski, Sisse R. and Niemann, Carsten U.},
-  year = {2021},
-  month = oct,
-  pages = {2021.10.28.21265598},
-  institution = {{Cold Spring Harbor Laboratory Press}},
-  doi = {10.1101/2021.10.28.21265598},
-  langid = {english}
+
+@article{zucco_personalized_2022,
+	title = {Personalized survival probabilities for {SARS}-{CoV}-2 positive patients by explainable machine learning},
+	volume = {12},
+	copyright = {2022 The Author(s)},
+	issn = {2045-2322},
+	url = {http://www.nature.com/articles/s41598-022-17953-y},
+	doi = {10.1038/s41598-022-17953-y},
+	abstract = {Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12 weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.},
+	language = {en},
+	number = {1},
+	urldate = {2022-09-04},
+	journal = {Scientific Reports},
+	author = {Zucco, Adrian G. and Agius, Rudi and Svanberg, Rebecka and Moestrup, Kasper S. and Marandi, Ramtin Z. and MacPherson, Cameron Ross and Lundgren, Jens and Ostrowski, Sisse R. and Niemann, Carsten U.},
+	month = aug,
+	year = {2022},
+	keywords = {Machine learning, Prognosis, Viral infection},
+	pages = {13879},
 }
+
 ```
