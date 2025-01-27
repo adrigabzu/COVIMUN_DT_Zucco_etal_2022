@@ -1,6 +1,6 @@
 # Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning
 
-Official code repository for the paper "[Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning](https://doi.org/10.1038/s41598-022-17953-y)" by Zucco et al., 2022.
+Code repository for the paper "[Personalized survival probabilities of SARS-CoV-2 positive patients by explainable machine learning](https://doi.org/10.1038/s41598-022-17953-y)" by Zucco et al., 2022.
 
 ## Software requirements
 Tested on Ubuntu 20.04 (Windows Subsystem for Linux 2)
